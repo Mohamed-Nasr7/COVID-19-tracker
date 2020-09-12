@@ -1,0 +1,42 @@
+.infoBox {
+  flex: 1;
+  cursor: pointer;
+  transition: all 0.4s ease !important;
+  box-shadow: 0;
+  border: 1px solid rgba(7, 7, 7, 0.082);
+}
+
+.infoBox:not(:last-child) {
+  margin-right: 15px;
+}
+@media (max-width: 576px) {
+  .infoBox:not(:last-child) {
+    margin-right: 0;
+  }
+}
+.infoBox__cases {
+  color: #cc1034;
+  font-weight: 600;
+  font-size: 1.75rem;
+  margin-bottom: 0.5rem;
+}
+
+.infoBox--selected {
+  transform: translate(5px, -5px);
+  box-shadow: 0 8.4px 10.1px rgba(0, 0, 0, 0.062),
+    0 10.3px 14.2px rgba(0, 0, 0, 0.041), 0 11.5px 19.4px rgba(0, 0, 0, 0.072) !important;
+  border: 1px solid rgba(117, 117, 117, 0.329);
+}
+
+.infoBox--hover:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 13.1px -12px rgba(0, 0, 0, 0.11),
+    0 9.8px 15.3px -12px rgba(0, 0, 0, 0.156),
+    0 16px 26px -12px rgba(0, 0, 0, 0.159) !important;
+}
+
+.infoBox__total {
+  color: #6c757d;
+  font-weight: 700 !important;
+  margin-top: 15px !important;
+}
